@@ -1,0 +1,10 @@
+{
+  "name": "browserslist-config",
+  "version": "2018.04",
+  "description": "Shared browserslist config",
+  "main": "index.js",
+  "repository": "git@github.com:telusdigital/browserslist-config.git",
+  "author": "TELUS digital",
+  "license": "MIT",
+  "private": true
+}
