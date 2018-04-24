@@ -1,0 +1,15 @@
+if: branch = master
+if: type IN (push)
+
+language: node_js
+
+node_js:
+  - 9
+
+stages:
+  - test
+  - coverage
+  - release
+
+install: true
+script: npx semantic-release
