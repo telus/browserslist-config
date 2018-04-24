@@ -26,6 +26,6 @@ You can also add your own queries after the `extends`, though this is not recomm
 You can use the `browserslist` CLI to find out the browsers targeted by the queries in your `browserslist` config.
 
 ```bash
-./node_modules/.bin/browserslist              # Ouput a list of targeted browsers
-./node_modules/.bin/browserslist --coverage   # Total coverage of targeted browsers
+npx browserslist              # Ouput a list of targeted browsers
+npx browserslist --coverage   # Total coverage of targeted browsers
 ```
