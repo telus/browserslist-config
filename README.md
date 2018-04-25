@@ -8,7 +8,9 @@ See https://github.com/browserslist/browserslist
 
 ## Install
 
-(Not available as an npm package yet)
+```
+yarn add @telusdigital/browserslist-config --dev
+```
 
 ## Set up
 
@@ -23,7 +25,7 @@ You can also add your own queries after the `extends`, though this is not recomm
 
 ## Which browsers do I support?
 
-You can use the `browserslist` CLI to find out the browsers targeted by the queries in your `browserslist` config.
+You can use the `browserslist` CLI to inspect the browsers targeted by the queries in your `browserslist` config.
 
 ```bash
 npx browserslist              # Ouput a list of targeted browsers
