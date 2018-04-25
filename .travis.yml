@@ -6,6 +6,9 @@ language: node_js
 node_js:
   - 9
 
+install: true
+test: true
+
 deploy:
   provider: script
   skip_cleanup: true
