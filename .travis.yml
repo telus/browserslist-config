@@ -6,5 +6,8 @@ language: node_js
 node_js:
   - 9
 
-install: true
-script: npx semantic-release
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
