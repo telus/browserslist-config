@@ -31,6 +31,6 @@ You can also add your own queries after the `extends`, though this is not recomm
 You can use the `browserslist` CLI to inspect the browsers targeted by the queries in your `browserslist` config.
 
 ```bash
-npx browserslist              # Ouput a list of targeted browsers
+npx browserslist              # Output a list of targeted browsers
 npx browserslist --coverage   # Total coverage of targeted browsers
 ```
