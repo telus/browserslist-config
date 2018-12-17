@@ -1,11 +1,12 @@
 {
   "version": "0.0.0-development",
-  "name": "@telusdigital/browserslist-config",
-  "description": "Shared browserslist config",
+  "name": "@telus/browserslist-config",
+  "description": "TELUS Shared Browserslist Config",
   "author": "TELUS digital (https://telus.com/digital)",
+  "homepage": "https://github.com/telus/browserslist-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telusdigital/browserslist-config.git"
+    "url": "https://github.com/telus/browserslist-config.git"
   },
   "license": "MIT",
   "main": "index.js",
@@ -19,12 +20,21 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "files": [
     "index.js"
   ],
   "bugs": {
-    "url": "https://github.com/telusdigital/browserslist-config/issues"
+    "url": "https://github.com/telus/browserslist-config/issues"
+  },
+  "scripts": {
+    "coverage": "opener coverage/lcov-report/index.html",
+    "lint:audit": "npm audit",
+    "lint:ec": "npx editorconfig-checker .",
+    "lint:md": "npx remark --quiet --frail .",
+    "lint": "npx npm-run-all -p -c -l lint:*",
+    "setup-local": "npx install-group peer --package @telus/build-essential --no-save",
+    "fix:md": "npm run lint:md -- -o"
   }
 }
